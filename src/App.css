@@ -1,0 +1,161 @@
+.app-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  line-height: 1.6;
+  background: linear-gradient(to right, #4b134f, #000046); /* Deeper purple and blue gradient */
+  min-height: 100vh;
+}
+
+.navbar {
+  background-color: #2a2f55;
+  padding: 0.8rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add some shadow for depth */
+}
+
+.nav-brand {
+  color: #fff;
+  font-size: 2rem; /* Make it slightly larger */
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+  color: #ddd; /* Lighten the color on hover */
+}
+
+.options-container {
+  width: 100%; /* Full width container */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for the toggle container */
+  margin-top: -1px; /* Align with the bottom of the navbar */
+}
+
+.toggle-buttons {
+  display: flex;
+  justify-content: center;
+  background-color: #2a2f55; /* Match with navbar */
+  padding: 1rem;
+}
+
+/* ... existing styles ... */
+
+.toggle-buttons button {
+  background-color: #fff;
+  color: #333;
+  border: 2px solid #333;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for button states */
+}
+
+.toggle-buttons button.active {
+  background-color: #4CAF50;
+  color: white;
+  border-color: #4CAF50;
+}
+
+/* Styles for the text input area when 'Text' is selected */
+.text-input-section {
+  padding: 1rem;
+  text-align: center;
+}
+
+.text-area,
+.additional-text-area {
+  width: 100%;
+  height: 150px;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  box-sizing: border-box; /* Box-sizing property is used to maintain the width */
+}
+
+/* Additional styles for the 'Additional notes' textarea */
+.additional-text-area {
+  margin-bottom: 1rem; /* Spacing below the second textarea */
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+  .text-area,
+  .additional-text-area {
+    width: 50%; /* Set the width to 50% for larger screens */
+    display: inline-block; /* Allows the textareas to be side by side */
+  }
+  
+  .additional-text-area {
+    margin-left: 20px; /* Adds spacing between the textareas */
+  }
+}
+
+/* App.css adjustments */
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.input-section {
+  width: 100%;
+  max-width: 600px; /* Set a max-width for larger screens */
+  margin-top: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px; /* Rounded corners for the input sections */
+  overflow: hidden; /* Ensures that child elements do not overflow the rounded corners */
+  background: #fff; /* Background color for the input section */
+  color: #333; /* Text color */
+}
+
+.upload-section,
+.text-input-section {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.upload-section input[type="file"] {
+  margin: 1rem 0; /* Add some spacing */
+}
+
+/* Adjust button styles for better UI */
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 4px; /* Rounded corners for buttons */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transition for button states */
+}
+
+button:hover {
+  transform: scale(1.05); /* Slight increase in size on hover */
+}
+
+/* Textarea improvements */
+.text-area {
+  border: 1px solid #ccc;
+  border-radius: 4px; /* Rounded corners for text areas */
+  margin-top: 1rem;
+}
+
+/* Ensure the dark theme is consistent for the navbar and buttons if preferred */
+.navbar, .toggle-buttons button.active, button {
+  background-color: #2a2f55;
+}
+
+/* You can add more styles here to enhance the UI further */
